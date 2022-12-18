@@ -1,4 +1,4 @@
-import Task from '../Contracts/Task'
+import Task from '../../Contracts/Task'
 
 const TaskResource = {
     toJson(task: Task) {

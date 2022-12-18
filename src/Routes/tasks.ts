@@ -1,10 +1,15 @@
 import express, { Request, Response } from 'express'
 
 // Tasks
-import TasksController from '../Controllers/TasksController'
+import TasksController from '../Http/Controllers/TasksController'
 import TaskRequest from '../Requests/TaskRequest'
 
 const router = express.Router()
+
+router.use((req: Request, res: Response, next) => {
+    console.log(`Request made on ${new Date().toISOString()}`)
+    next()
+})
 
 router.get(
     '/',

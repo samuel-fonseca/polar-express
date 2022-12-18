@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import Task from '../Models/Task'
-import TaskRequest from '../Requests/TaskRequest';
+import Task from '../../Models/Task'
+import TaskRequest from '../../Requests/TaskRequest';
 import TaskResource from '../Resources/TaskResource'
 
 const TasksController = {

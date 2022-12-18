@@ -1,4 +1,4 @@
-import User from "../Contracts/User"
+import User from "../../Contracts/User"
 
 const UserResource = {
     toJson: (user: User) => ({
